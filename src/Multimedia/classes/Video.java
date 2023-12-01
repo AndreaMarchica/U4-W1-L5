@@ -37,7 +37,7 @@ public class Video extends MultimediaFile implements Playable, Brightness {
     @Override
     public void play() {
         for(int i = 0; i < this.volume; i++){
-            System.out.println(this.title + this.volume + this.brightness);
+            System.out.println("TITLE " + getTitle() + " VOLUME: " + this.volume + " BRIGHTNESS " + this.brightness);
         }
     }
 

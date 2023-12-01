@@ -54,13 +54,14 @@ public class Main {
             default -> {
                 String error = "ERROR, UNKNOWN FILE TYPE";
                 System.out.println(error);
-                i--;
+                i--; //return to previous interation
             }
         }
         System.out.println(Arrays.toString(files));
     }
 
-        System.out.println("FILE CORRECTLY CREATED!");
+        System.out.println("FILES CORRECTLY CREATED!"); //confirmation
+        System.out.println("--------------------------------");
 
     /*CHOOSE WHICH FILE TO PLAY/SHOW*/
         System.out.println("WHICH FILE DO YOU WANT TO PLAY/SHOW? 'INSERT A NUMBER FROM 1 TO 5'");
