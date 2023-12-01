@@ -29,7 +29,7 @@ public class Audio extends MultimediaFile implements Playable {
     }
     @Override
     public void play() {
-
+    System.out.println(this.toString());
     }
 
     @Override
