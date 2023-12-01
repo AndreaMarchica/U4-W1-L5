@@ -20,12 +20,12 @@ public class Audio extends MultimediaFile implements Playable {
     /*METODI*/
     @Override
     public void vuolumeUp() {
-    this.volume = volume++;
+        this.volume = volume +1;
     }
 
     @Override
     public void volumeDown() {
-
+        this.volume = volume -1;
     }
     @Override
     public void play() {
