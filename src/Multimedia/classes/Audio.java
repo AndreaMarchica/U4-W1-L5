@@ -32,4 +32,12 @@ public class Audio extends MultimediaFile implements Playable {
 
     }
 
+    @Override
+    public String toString() {
+        return "Audio{" +
+                "title='" + title + '\'' +
+                ", volume=" + volume +
+                ", duration=" + duration +
+                '}';
+    }
 }

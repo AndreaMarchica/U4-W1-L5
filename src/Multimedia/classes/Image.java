@@ -24,4 +24,12 @@ public class Image extends MultimediaFile implements Brightness {
     public void brightnessDown() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Image{" +
+                "title='" + title + '\'' +
+                ", brightness=" + brightness +
+                '}';
+    }
 }

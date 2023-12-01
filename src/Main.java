@@ -1,17 +1,19 @@
+import Multimedia.classes.Audio;
+import Multimedia.classes.Image;
+import Multimedia.classes.Video;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Ctrl+. with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Ctrl+F5 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+    Audio track1 = new Audio("Hell's Bells", 6, 4);
+        System.out.println(track1);
 
-            // Press F5 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing F9.
-            System.out.println("i = " + i);
-        }
+    Image img1 = new Image("La Gioconda", 3);
+        System.out.println(img1);
+
+    Video movie1 = new Video("Inception", 10, 4, 3);
+        System.out.println(movie1);
     }
 }

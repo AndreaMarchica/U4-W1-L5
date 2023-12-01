@@ -45,4 +45,14 @@ public class Video extends MultimediaFile implements Playable, Brightness {
     public void volumeDown() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "title='" + title + '\'' +
+                ", volume=" + volume +
+                ", duration=" + duration +
+                ", brightness=" + brightness +
+                '}';
+    }
 }
