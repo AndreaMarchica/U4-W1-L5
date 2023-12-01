@@ -29,7 +29,9 @@ public class Audio extends MultimediaFile implements Playable {
     }
     @Override
     public void play() {
-    System.out.println(this.toString());
+        for(int i = 0; i < this.volume; i++){
+            System.out.println(this.title + this.volume);
+    }
     }
 
     @Override

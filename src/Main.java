@@ -61,8 +61,51 @@ public class Main {
     }
 
         System.out.println("FILE CORRECTLY CREATED!");
-        System.out.println("WHICH FILE DO YOU WANT TO PLAY/SHOW? 'INSERT A NUMBER FROM 0 TO 4'");
+
+    /*CHOOSE WHICH FILE TO PLAY/SHOW*/
+        System.out.println("WHICH FILE DO YOU WANT TO PLAY/SHOW? 'INSERT A NUMBER FROM 1 TO 5'");
         int choose = scanner.nextInt();
-
-
+        if (choose == 1) {
+            if(files[0] instanceof Audio) {
+                ((Audio) files[0]).play();
+            } else if (files[0] instanceof Video) {
+                ((Video) files[0]).play();
+            } else { ((Image) files[0]).show();
+        }}
+        else if (choose == 2) {
+            if (files[1] instanceof Audio) {
+                ((Audio) files[1]).play();
+            } else if (files[1] instanceof Video) {
+                ((Video) files[1]).play();
+            } else {
+                ((Image) files[1]).show();
+                }
+            }
+        else if (choose == 3) {
+            if (files[2] instanceof Audio) {
+                ((Audio) files[2]).play();
+            } else if (files[2] instanceof Video) {
+                ((Video) files[2]).play();
+            } else {
+                ((Image) files[2]).show();
+            }
+        }
+        else if (choose == 4) {
+            if (files[3] instanceof Audio) {
+                ((Audio) files[3]).play();
+            } else if (files[3] instanceof Video) {
+                ((Video) files[3]).play();
+            } else {
+                ((Image) files[3]).show();
+            }
+        }
+        else if (choose == 5) {
+            if (files[4] instanceof Audio) {
+                ((Audio) files[4]).play();
+            } else if (files[4] instanceof Video) {
+                ((Video) files[4]).play();
+            } else {
+                ((Image) files[4]).show();
+            }
+        }
 }}

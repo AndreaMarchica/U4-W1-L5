@@ -28,7 +28,9 @@ public class Image extends MultimediaFile implements Brightness {
     }
 
     public void show() {
-
+        for(int i = 0; i < this.brightness; i++){
+            System.out.println(this.title + this.brightness);
+        }
     }
 
     @Override

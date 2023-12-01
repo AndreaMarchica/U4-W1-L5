@@ -31,11 +31,14 @@ public class Video extends MultimediaFile implements Playable, Brightness {
     public void brightnessDown() {
         this.brightness = brightness -1;
 
+
     }
 
     @Override
     public void play() {
-
+        for(int i = 0; i < this.volume; i++){
+            System.out.println(this.title + this.volume + this.brightness);
+        }
     }
 
     @Override
