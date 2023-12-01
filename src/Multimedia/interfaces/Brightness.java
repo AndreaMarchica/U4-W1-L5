@@ -1,7 +1,6 @@
 package Multimedia.interfaces;
 
 public interface Brightness {
-    /*ATTRIBUTI*/
 
     /*METODI*/
     public void brightnessUp();

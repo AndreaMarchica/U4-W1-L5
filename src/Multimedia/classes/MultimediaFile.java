@@ -5,6 +5,12 @@ public abstract class MultimediaFile {
     private String title;
 
     /*COSTRUTTORI*/
+    protected MultimediaFile(String title) {
+        this.title = title;
+    }
 
     /*METODI*/
+    public String getTitle() {
+        return title;
+    }
 }

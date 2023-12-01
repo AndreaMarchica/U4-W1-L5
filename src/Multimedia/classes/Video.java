@@ -14,7 +14,7 @@ public class Video extends MultimediaFile implements Playable, Brightness {
 
     /*COSTRUTTORI*/
     public Video(String title, int duration, int volume, int brightness){
-        this.title = title;
+        super(title);
         this.duration = duration;
         this.volume = volume;
         this.brightness= brightness;
@@ -23,11 +23,13 @@ public class Video extends MultimediaFile implements Playable, Brightness {
     /*METODI*/
     @Override
     public void brightnessUp() {
+        this.brightness = brightness +1;
 
     }
 
     @Override
     public void brightnessDown() {
+        this.brightness = brightness -1;
 
     }
 
@@ -38,18 +40,18 @@ public class Video extends MultimediaFile implements Playable, Brightness {
 
     @Override
     public void vuolumeUp() {
-
+        this.volume = volume +1;
     }
 
     @Override
     public void volumeDown() {
-
+        this.volume = volume -1;
     }
 
     @Override
     public String toString() {
         return "Video{" +
-                "title='" + title + '\'' +
+                "title='" + getTitle() + '\'' +
                 ", volume=" + volume +
                 ", duration=" + duration +
                 ", brightness=" + brightness +

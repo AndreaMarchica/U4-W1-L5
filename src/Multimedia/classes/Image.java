@@ -10,25 +10,31 @@ public class Image extends MultimediaFile implements Brightness {
 
     /*COSTRUTTORI*/
     public Image(String title, int brightness){
-        this.title = title;
+        super(title);
         this.brightness = brightness;
     }
 
     /*METODI*/
     @Override
     public void brightnessUp() {
+        this.brightness = brightness +1;
 
     }
 
     @Override
     public void brightnessDown() {
+        this.brightness = brightness -1;
+
+    }
+
+    public void show() {
 
     }
 
     @Override
     public String toString() {
         return "Image{" +
-                "title='" + title + '\'' +
+                "title='" + getTitle() + '\'' +
                 ", brightness=" + brightness +
                 '}';
     }

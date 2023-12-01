@@ -12,7 +12,7 @@ public class Audio extends MultimediaFile implements Playable {
 
     /*COSTRUTTORI*/
     public Audio(String title, int duration, int volume){
-        this.title = title;
+        super(title);
         this.duration = duration;
         this.volume = volume;
     }
@@ -20,7 +20,7 @@ public class Audio extends MultimediaFile implements Playable {
     /*METODI*/
     @Override
     public void vuolumeUp() {
-
+    this.volume = volume++;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class Audio extends MultimediaFile implements Playable {
     @Override
     public String toString() {
         return "Audio{" +
-                "title='" + title + '\'' +
+                "title='" + getTitle() + '\'' +
                 ", volume=" + volume +
                 ", duration=" + duration +
                 '}';
