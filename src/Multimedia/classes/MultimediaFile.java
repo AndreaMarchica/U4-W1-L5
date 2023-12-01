@@ -2,7 +2,7 @@ package Multimedia.classes;
 
 public abstract class MultimediaFile {
     /*ATTRIBUTI*/
-    String title;
+    private String title;
 
     /*COSTRUTTORI*/
 
